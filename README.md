@@ -43,7 +43,7 @@ Successfully set up the new user
 ```
 
 
-# Initialize a new backend
+# Iniciar Nuevo Backend Aplicacion
 
 ###### Ahora que tenemos una aplicación React en ejecución, es hora de configurar Amplify para que podamos crear los servicios de backend necesarios para admitir la aplicación.
 
@@ -52,15 +52,16 @@ Successfully set up the new user
 
 ``` amplify init ```
 
-[Paso A Paso amplify init]()
+[Paso A Paso amplify init](https://www.youtube.com/watch?v=MJo7D4vo7gs)
 
-Una vez ingresado y de a ver configurado se te creara una carpeta en tu raiz llamado: **amplify** esto contendra lo nesesario para poder iniciar nuestro Funcion o api
+
+Una vez ingresado y de a ver configurado se te creara una carpeta en tu raiz llamado: **amplify** esto contendra lo nesesario para poder iniciar nuestra Funcion o api
 
 <img width='300px' height='420px' src='https://i.imgur.com/oOb8UR4.png' alt='amplify Folder'>
 
 ``` amplify add function ```
 
-[Paso a Paso creando la Funcion]()
+[Paso a Paso creando la Funcion](https://i.imgur.com/homTnno.mp4)
 
 con esto podemos agregar nuestra funcion que podremos conectar luego al github para hacer pequeñas tareas de backend como el envio de formularios a la base de datos o envio de correo desde un formulario etc...
 
