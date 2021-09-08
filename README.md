@@ -56,7 +56,7 @@ Successfully set up the new user
 
 Una vez ingresado y de a ver configurado se te creara una carpeta en tu raiz llamado: **amplify** esto contendra lo nesesario para poder iniciar nuestro Funcion o api
 
-<img width='300px' height='420px' src='https://i.imgur.com/oOb8UR4.png' alt='amplify Folder'>
+<img width='760px' height='360px' src='https://i.imgur.com/oOb8UR4.png' alt='amplify Folder'>
 
 ``` amplify add function ```
 
