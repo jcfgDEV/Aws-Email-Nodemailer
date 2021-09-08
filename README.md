@@ -29,7 +29,7 @@ Complete the user creation using the AWS console
 
 Una vez creado el usuario, Amplify CLI le pedirá que proporcione el **accessKeyId** y el **secretAccessKey** para conectar Amplify CLI con su usuario de IAM recién creado.
 
-<img width='760px' height='320px' src="https://i.imgur.com/xhxEmtx.png" alt="IAM FINAL"></img>
+<img width='760px' height='190px' src="https://i.imgur.com/xhxEmtx.png" alt="IAM FINAL"></img>
 
 ```
 Enter the access key of the newly created user:
