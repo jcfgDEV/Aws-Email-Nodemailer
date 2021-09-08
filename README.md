@@ -66,6 +66,6 @@ con esto podemos agregar nuestra funcion que podremos conectar luego al github p
 
 <img width='300px' height='420px' src='https://i.imgur.com/zlTeDKZ.png' alt='amplify Folder'>
 
-**NOTA: Esta Funcion la veremos creada en una carpeta llamada function y estara en la siguiente ruta: amplify/**
+**NOTA: Esta Funcion la veremos creada en una carpeta llamada function y estara en la siguiente ruta: amplify/backend/function/NOMBRE-FUNCION/src/[index.js,event.json,package.json]**
 
 # Conectando Github Con Nuestra aplicacion de Amplify
