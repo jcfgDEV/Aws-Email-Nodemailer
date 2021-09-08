@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Instalacion y Configurar Amplify CLI 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+siguiendo las siguientes instrucciones
 
-## Available Scripts
+``` npm install -g @aws-amplify/cli  ```
 
-In the project directory, you can run:
+**Nota: Debido a que estamos instalando la CLI de Amplify a nivel Global, es posible que deba ejecutar el comando anterior con sudo según las políticas de su sistema.**
 
-### `npm start`
+# Ahora es el momento de configurar la CLI de Amplify. Configure Amplify ejecutando el siguiente comando:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Paso a Paso de la creacion del IAM]
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+amplify configure le pedirá que inicie sesión en la consola de AWS.
 
-### `npm test`
+Una vez que haya iniciado sesión, Amplify CLI le pedirá que cree un usuario de IAM.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Paso a Paso de la creacion del IAM](https://i.imgur.com/Z4AqWsy.mp4)
 
-### `npm run build`
+```
+Specify the AWS Region
+? region:  # Your preferred region
+Specify the username of the new IAM user:
+? user name:  # User name for Amplify IAM user
+Complete the user creation using the AWS console
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Cree un usuario con acceso de administrador a su cuenta para que le suministre recursos de AWS**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Una vez creado el usuario, Amplify CLI le pedirá que proporcione el **accessKeyId** y el **secretAccessKey** para conectar Amplify CLI con su usuario de IAM recién creado.
 
-### `npm run eject`
+<img width='300px' height='420px' src="https://i.imgur.com/xhxEmtx.png" alt="IAM FINAL"></img>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+Enter the access key of the newly created user:
+? accessKeyId:  # YOUR_ACCESS_KEY_ID
+? secretAccessKey:  # YOUR_SECRET_ACCESS_KEY
+This would update/create the AWS Profile in your local machine
+? Profile Name:  # (default)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Successfully set up the new user
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Initialize a new backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+###### Ahora que tenemos una aplicación React en ejecución, es hora de configurar Amplify para que podamos crear los servicios de backend necesarios para admitir la aplicación.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+**Desde la raíz del proyecto, ejecute:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+``` amplify init ```
 
-### Analyzing the Bundle Size
+[Paso A Paso amplify init]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Una vez ingresado y de a ver configurado se te creara una carpeta en tu raiz llamado: **amplify** esto contendra lo nesesario para poder iniciar nuestro Funcion o api
 
-### Making a Progressive Web App
+<img width='300px' height='420px' src='https://i.imgur.com/oOb8UR4.png' alt='amplify Folder'>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+``` amplify add function ```
 
-### Advanced Configuration
+[Paso a Paso creando la Funcion]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+con esto podemos agregar nuestra funcion que podremos conectar luego al github para hacer pequeñas tareas de backend como el envio de formularios a la base de datos o envio de correo desde un formulario etc...
 
-### Deployment
+<img width='300px' height='420px' src='https://i.imgur.com/zlTeDKZ.png' alt='amplify Folder'>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**NOTA: Esta Funcion la veremos creada en una carpeta llamada function y estara en la siguiente ruta: amplify/**
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Conectando Github Con Nuestra aplicacion de Amplify
