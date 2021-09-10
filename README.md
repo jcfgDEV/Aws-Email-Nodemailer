@@ -73,6 +73,8 @@ con esto podemos agregar nuestra funcion que podremos conectar luego al github p
 
 # Conectando Github Con Nuestra aplicacion de Amplify
 
+> Aqui pueden ver los mismos pasos en este video [Pasos](https://www.youtube.com/watch?v=ptb3fZ_hKc8)
+
 > Tenemos que seleccionar un proveedor. para este proyecto ocupare Github. Nos vamos a Amplify y veremoss ahi todas nuestras aplicaciones que tengamos creadas seleccionamos el deseado y cuando estemos alli
 
 <img width='1024px' height='620px' src='https://i.imgur.com/TENUVr1.png' alt='proveedores'>
@@ -85,6 +87,7 @@ con esto podemos agregar nuestra funcion que podremos conectar luego al github p
 **NOTA: Hay que tener un rol de servicio. eso lo podemos crear en IAM o en el misma configuracion al hacer click nos llevara a aws IAM**
 
 > Al hacer click en 'Create New Role' nos llevara a Aws IAM para crearnos nuestro rol
-<img width='1024px' height='620px' src="https://i.imgur.com/X95EZCg.png" alt='Rol Service'>
+<img width='1024px' height='400px' src="https://i.imgur.com/X95EZCg.png" alt='Rol Service'>
 
 [Paso a Paso Creando Rol](https://i.imgur.com/jesjDrv.mp4)
+
