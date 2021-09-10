@@ -87,7 +87,7 @@ con esto podemos agregar nuestra funcion que podremos conectar luego al github p
 **NOTA: Hay que tener un rol de servicio. eso lo podemos crear en IAM o en el misma configuracion al hacer click nos llevara a aws IAM**
 
 > Al hacer click en 'Create New Role' nos llevara a Aws IAM para crearnos nuestro rol
-<img width='1024px' height='400px' src="https://i.imgur.com/X95EZCg.png" alt='Rol Service'>
+<img width='1024px' height='280px' src="https://i.imgur.com/X95EZCg.png" alt='Rol Service'>
 
 [Paso a Paso Creando Rol](https://i.imgur.com/jesjDrv.mp4)
 

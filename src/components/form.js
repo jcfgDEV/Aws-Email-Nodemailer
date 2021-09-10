@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const colores = {
 	borde: "#0075FF",
-	error: "#b8142a",
-	exito: "#70ff63"
+	error: "#ba3030",
+	exito: "#70ff63",
 }
 
 
@@ -14,7 +14,7 @@ font-size:2rem;
 color:black;
 display:flex;
 justify-content: center;
-transform:translateY(13rem);
+transform:translateY(9rem);
 `;
 
 
@@ -55,7 +55,7 @@ font-size:2rem;
 `;
 
 const FORMS = styled.form`
-transform:translateY(16rem);
+transform:translateY(9rem);
 display:grid;
 justify-content:center;
 gap:40px;
@@ -81,29 +81,33 @@ const LeyendaError = styled.p`
 `;
 
 const MensajeExito = styled.p`
-	transform translateY(-15px);
-	font-size: 19px;
-	color: ${colores.exito};
+    background-color:${colores.exito};
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    width:190px;
+    font-size:1.2rem;
+    font-weight:bold;
+    box-shadow: -3px 12px 7px 0px rgba(0,0,0,0.67);
 `;
 
 const MensajeError = styled.div`
-	@media(max-width: 767px) {
-		padding: 0px 1px;
+	background-color:${colores.error};
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform:translateY(-30rem);
+    position:absolute;
+    width:330px;
+    font-weight:bold;
+    box-shadow: -3px 12px 7px 0px rgba(0,0,0,0.67);
 
-	}
-	transform: translateY(30px);
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	padding: 0px 4px;
-	border-radius: 3px;
-	grid-column: span 2;
-	p {
-		margin: 0;
-	} 
-	b {
-		margin-left: 10px;
-	}
+    
+
+
 `;
 
 const IconoValidacion = styled(FontAwesomeIcon)`

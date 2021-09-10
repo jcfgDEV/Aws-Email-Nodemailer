@@ -84,23 +84,24 @@ function Forms() {
             cambiarEstado={cambiarDIRECCION}
             leyendaError="No debe estar vacio y solo ingresar direcciones validas"
             expresionRegular={expresiones.DIRECCION}
-
             />
-             <div>
-                {formularioValido === false && <MensajeError>
-                    <p className='WrongW'>
-                        <div className='DisplayIcon'>{<BsExclamationTriangle size='1.8rem' color='red'/>}</div>
-                        rellena el formulario completamente. 
-                    </p>
-                </MensajeError>}
-                <div className='DisplayButton'>
-                    <button className='Button' type="submit">Enviar</button>
-                </div>
-                <div id='msg' className=''>
-                {
-                 formularioValido === true && <MensajeExito id='msg-exito' className=''>Formulario enviado exitosamente!</MensajeExito>
-                }
-                </div>
+            <div className="ST">
+            {formularioValido === false && 
+                <MensajeError>
+                    <BsExclamationTriangle size='1.8rem' color='red'/>
+                    Wrong input cannot empty
+                </MensajeError>
+            }
+            {formularioValido === true &&
+
+                <MensajeExito>
+                    Suceessful Sent!
+                </MensajeExito>
+            
+            }
+            </div>
+            <div className='BC'>
+                <button className='Button'>Submit</button>
             </div>
         </FORMS>
         </>
