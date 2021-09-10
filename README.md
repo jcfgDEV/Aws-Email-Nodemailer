@@ -75,5 +75,5 @@ con esto podemos agregar nuestra funcion que podremos conectar luego al github p
 
 > Tenemos que seleccionar un proveedor. para este proyecto ocupare Github. Nos vamos a Amplify y veremoss ahi todas nuestras aplicaciones que tengamos creadas seleccionamos el deseado y cuando estemos alli
 
-<img width='300px' height='420px' src='https://i.imgur.com/TENUVr1.png' alt='proveedores'>
+<img width='720px' height='260px' src='https://i.imgur.com/TENUVr1.png' alt='proveedores'>
 
