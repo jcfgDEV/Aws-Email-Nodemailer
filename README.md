@@ -65,8 +65,15 @@ Una vez ingresado y de a ver configurado se te creara una carpeta en tu raiz lla
 
 con esto podemos agregar nuestra funcion que podremos conectar luego al github para hacer pequeñas tareas de backend como el envio de formularios a la base de datos o envio de correo desde un formulario etc...
 
+**NOTA: Una vez formada la carpeta de src donde contiene la function. puedes desplegarla usando ```amplify push```**
+
 <img width='300px' height='420px' src='https://i.imgur.com/zlTeDKZ.png' alt='amplify Folder'>
 
 **NOTA: Esta Funcion la veremos creada en una carpeta llamada function y estara en la siguiente ruta: amplify/backend/function/NOMBRE-FUNCION/src/[index.js,event.json,package.json]**
 
 # Conectando Github Con Nuestra aplicacion de Amplify
+
+> Tenemos que seleccionar un proveedor. para este proyecto ocupare Github. Nos vamos a Amplify y veremoss ahi todas nuestras aplicaciones que tengamos creadas seleccionamos el deseado y cuando estemos alli
+
+<img width='300px' height='420px' src='https://i.imgur.com/TENUVr1.png' alt='proveedores'>
+
