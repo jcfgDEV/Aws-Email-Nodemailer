@@ -93,3 +93,8 @@ con esto podemos agregar nuestra funcion que podremos conectar luego al github p
 
 [Paso a Paso Creando Rol](https://i.imgur.com/jesjDrv.mp4)
 
+
+# Nodemailer and SES estructura basica 
+
+>dentro de la carpeta **modelo.** Podras encontrar la estructura basica para los que quieran usar nodemailer o la de SES. 
+

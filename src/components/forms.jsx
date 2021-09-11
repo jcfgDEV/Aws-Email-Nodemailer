@@ -41,7 +41,7 @@ function Forms() {
             })
             .then(res => {
                 if(res.data.status === "success"){
-                    console.log("Message Sent!")
+                    console.log("SUCCESSFUL SENT!")
                 }
             })
             .catch(err => {
