@@ -6,6 +6,7 @@ const colores = {
 	borde: "#0075FF",
 	error: "#ba3030",
 	exito: "#70ff63",
+    errorL: "#fa0505"
 }
 
 
@@ -58,18 +59,22 @@ const FORMS = styled.form`
 transform:translateY(9rem);
 display:grid;
 justify-content:center;
-gap:40px;
+gap:60px;
 
 `
 
 const LeyendaError = styled.p`
 	position:absolute;
-	font-size: 12px;
+    padding:5px;
+	font-size: 14px;
 	margin-bottom: 0;
-	color: ${colores.error};
+	background-color:${colores.errorL};
 	display: none;
-	font-weight:900;
+	font-weight:bolder;
 	text-transform: uppercase;
+    color:white;
+    border-radius:4px;
+    
 
 	${props => props.valido === 'true' && css`
 		display: none;
@@ -79,6 +84,7 @@ const LeyendaError = styled.p`
 		display: block;
 	`}
 `;
+
 
 const MensajeExito = styled.p`
     background-color:${colores.exito};
@@ -90,6 +96,7 @@ const MensajeExito = styled.p`
     width:190px;
     font-size:1.2rem;
     font-weight:bold;
+    transform:translateY(-4rem);
     box-shadow: -3px 12px 7px 0px rgba(0,0,0,0.67);
 `;
 
@@ -99,7 +106,7 @@ const MensajeError = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    transform:translateY(-30rem);
+    transform:translateY(-33rem);
     position:absolute;
     width:330px;
     font-weight:bold;

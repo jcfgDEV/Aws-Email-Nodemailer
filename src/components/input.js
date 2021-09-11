@@ -1,10 +1,10 @@
-import {INPUT} from './form.js';
+import {INPUT,LeyendaError} from './form.js';
 
 
 
 import React from 'react'
 
-function Input({tipo,placeholder,name,estado,cambiarEstado,expresionRegular,funcion}) {
+function Input({tipo,placeholder,name,estado,cambiarEstado,expresionRegular,funcion,leyendaError,errorSoloNombre}) {
 
         const onChange = (e) => {
             cambiarEstado({...estado,campo:e.target.value});
@@ -36,7 +36,9 @@ function Input({tipo,placeholder,name,estado,cambiarEstado,expresionRegular,func
             onBlur={validacion}
             valido={estado.valido}
             />
+            <LeyendaError valido={estado.valido}>{leyendaError}</LeyendaError>
         </div>
+        
         </>
     )
 }

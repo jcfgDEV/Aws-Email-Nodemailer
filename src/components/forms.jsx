@@ -13,7 +13,7 @@ function Forms() {
 
     const expresiones = {
         NAME: /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{1,30}$/,
-        AGE: /[0-9]$|^[1-9][0-9]$|^(100)$/,
+        AGE: /([A-Z]-[a-z])a^100|[1-9]?\d$/,
         DIRECCION: /^([a-zA-Z]+( [a-zA-Z]+)+).*$/
 
     }
@@ -64,7 +64,7 @@ function Forms() {
             name="NAME"
             estado={NAME}
             cambiarEstado={cambiarNOME}
-            leyendaError="No debe estar vacio este campo"
+            leyendaError="no debe ingresar numeros"
             expresionRegular={expresiones.NAME}
             />
              <INPUT

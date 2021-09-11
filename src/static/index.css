@@ -20,7 +20,7 @@ body{
     cursor: pointer;
     box-shadow: -3px 12px 7px 0px rgba(0,0,0,0.67);
     font-family: 'Cinzel', serif;
-    transform: translateY(4rem);
+    transform: translateY(-2rem);
 
 }
 
