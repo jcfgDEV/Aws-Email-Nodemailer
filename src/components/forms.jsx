@@ -36,7 +36,7 @@ function Forms() {
             axios({
                 method:"post",
                 ContenType: "application/json",
-                url: '',
+                url: 'https://66x7zywefi.execute-api.eu-west-2.amazonaws.com/master/sending',
                 data: Datos
             })
             .then(res => {
