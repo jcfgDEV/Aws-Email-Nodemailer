@@ -10,8 +10,6 @@ siguiendo las siguientes instrucciones
 
 # Ahora es el momento de configurar la CLI de Amplify. Configure Amplify ejecutando el siguiente comando:
 
-[Paso a Paso de la creacion del IAM]
-
 amplify configure le pedirá que inicie sesión en la consola de AWS.
 
 Una vez que haya iniciado sesión, Amplify CLI le pedirá que cree un usuario de IAM.
